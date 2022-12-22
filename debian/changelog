@@ -1,0 +1,20 @@
+ruby-multi-test (0.1.2-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 14 Jun 2022 15:22:33 +0200
+
+ruby-multi-test (0.1.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Update packaging with a new dh-make-ruby run
+
+ -- Antonio Terceiro <terceiro@debian.org>  Thu, 29 Oct 2015 17:37:01 -0200
+
+ruby-multi-test (0.1.1-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Cédric Boutillier <boutil@debian.org>  Sun, 20 Apr 2014 15:29:02 +0200

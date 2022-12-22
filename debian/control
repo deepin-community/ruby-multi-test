@@ -1,0 +1,28 @@
+Source: ruby-multi-test
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <boutil@debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-multi-test.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-multi-test.git
+Homepage: http://cukes.info
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-multi-test
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Suggests: ruby-rspec, ruby-test-unit, ruby-minitest
+Description: library to control autorun feature of test frameworks
+ This library provides a uniform interface onto whatever testing library has
+ been loaded into a running Ruby process. It can be used for example to
+ deactivate the autorun feature of those testing frameworks in a unified way.
+ Supported test frameworks are RSpec, test/unit, and minitest.
+ .
+ It is used to run the test suite of the cucumber package.
